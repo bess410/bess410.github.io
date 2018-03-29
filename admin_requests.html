@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link href="css/style.css" rel="stylesheet" />
+		<link rel="shortcut icon" href="css/img/hotel.ico" type="image/x-icon" />
+		<title>Новые заявки</title>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+		<script src="js/admin_requests.js"></script>
+		<script src="js/menu.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+			</div>
+			<div id="content">
+				<div id="left_panel">
+					<div class="header">
+						Здравствуйте, Администратор
+					</div>
+					<ul class="user_menu">
+						<li><a href="admin_requests.html">Новые заявки</a></li>
+						<li><a href="admin_settings.html">Настройки</a></li>
+						<li><a href="index.html">Выход</a></li>
+					</ul>
+				</div>
+				<div id="right_panel">
+					<table class="clients">
+						<tr>
+							<th>Id клиента</th>
+							<th>Логин</th>
+							<th>Номер заявки</th>
+							<th>Количество проживающих</th>
+							<th>Класс</th>
+							<th>Начало проживания</th>
+							<th>Окончание проживания</th>
+							<th>Id номера</th>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>user</td>
+							<td>13</td>
+							<td>2</td>
+							<td>Люкс</td>
+							<td>10.04.2018</td>
+							<td>14.04.2018</td>
+							<td><a class="get_room" href="">Подобрать номер</a></td>
+						</tr>
+						<tr>
+							<td colspan="10">
+								<a class="delete" href="">Удалить</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="footer">
+				<div id="contacts">
+					<p>Адрес:
+					г. Ижевск ул. Ленина д.1 офис 35</p>
+					<p>Телефон:
+					+7(3412)76-33-59</p>
+					<p>Skype:
+					hotroomsizhevsk</p>
+				</div>
+			</div>
+			<div id="popup_get_room">
+				<span class="modal_close">X</span>
+				<table>
+					<tr>
+						<th>Id номера</th>
+						<th>Адрес гостиницы</th>
+						<th>Количество мест</th>
+						<th>Класс номера</th>
+						<th>Выбрать номер</th>
+					</tr>
+					<tr>
+						<td class="id_room">10</td>
+						<td>ул. Пушкинская, д. 268</td>
+						<td>2</td>
+						<td>Люкс</td>
+						<td><a class="choose_room" href="">Выбрать</a></td>
+					</tr>
+					<tr>
+						<td class="id_room">15</td>
+						<td>ул. Ленина, д. 1</td>
+						<td>2</td>
+						<td>Люкс</td>
+						<td><a class="choose_room" href="">Выбрать</a></td>
+					</tr>
+					<tr>
+						<td class="id_room">27</td>
+						<td>ул. Горького, д. 79</td>
+						<td>2</td>
+						<td>Люкс</td>
+						<td><a class="choose_room" href="">Выбрать</a></td>
+					</tr>
+					<tr>
+						<td class="id_room">65</td>
+						<td>ул. Пушкинская, д. 268</td>
+						<td>2</td>
+						<td>Люкс</td>
+						<td><a class="choose_room" href="">Выбрать</a></td>
+					</tr>
+					<tr>
+						<td class="id_room">98</td>
+						<td>ул. Ленина, д. 1</td>
+						<td>2</td>
+						<td>Люкс</td>
+						<td><a class="choose_room" href="">Выбрать</a></td>
+					</tr>
+					<tr>
+						<td class="id_room">11</td>
+						<td>ул. Горького, д. 79</td>
+						<td>2</td>
+						<td>Люкс</td>
+						<td><a class="choose_room" href="">Выбрать</a></td>
+					</tr>
+				</table>
+			</div>
+			<div id="overlay"></div>
+		</div>
+	</body>
+</html>

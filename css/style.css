@@ -1,0 +1,259 @@
+body{
+	background-image:  url("img/back.jpg");
+	font-family: Verdana;
+	font-size: 14px;
+	margin: 0px;
+}
+#wrapper {
+	width: 1200px;
+	margin: auto;
+}
+
+#header {
+    width: 1200px;
+	height: 300px;
+	background: url("img/header.jpg") no-repeat;
+	background-size: cover;
+}
+
+#menu {
+	background: #ccc;
+	height: 50px;
+}
+
+#content {
+	padding: 20px 0px;
+	background: #eee;
+	min-height: 500px;
+}
+
+#login_form {
+	width: 500px;
+	margin: auto;
+	font-size: 40px;
+	color: black;
+}
+
+#login_form input{
+	width: 100%;
+	font-size: inherit;
+	border-radius: 5px;
+}
+
+#login_form #enter{
+	text-align:center;
+	width: 200px;
+}
+
+#login_form:after, #registration:after, #content:after, #right_panel:after{
+	content:"";
+	clear:both;
+	display:block;
+}
+
+#registration {
+	text-align:center;
+	width: 600px;
+	margin: auto;
+	font-size: 40px;
+}
+
+#registration div{
+	text-align:left;
+}
+
+#registration input{
+	border-radius:5px;
+	width: 250px;
+	font-size: 40px;
+}
+
+#btn_reg, #change_request, #create_new_request{
+	margin-top: 30px;
+}
+
+.top{
+	margin-top: 30px;
+}
+.left{
+	float: left;
+	text-align: left;
+}
+
+.right{
+	float: right;
+	text-align: left;
+}
+
+#left_panel {
+	list-style-type:none;
+	width: 300px;
+	float: left;
+	min-height: 100px;
+}
+
+#left_panel li{
+	padding:10px 5px;
+	font-weight:bold;
+}
+
+a{
+	color:#222;
+}	
+
+a.selected{
+	color: #0bb;
+}
+
+a:hover{
+	color: #0bb;
+}
+
+#right_panel{
+	text-align: center;
+	width: 800px;
+	float:left;
+	padding: 0px 20px;
+}
+
+#create_request{
+	margin-bottom: 10px;
+	display:inline-block;
+	font-weight:bold;
+	color: red;
+}
+
+#create_request:hover{
+	color: #0bb;
+}
+
+table{
+	text-align: center;
+	border-collapse: collapse;
+}
+
+td a{
+	padding: 0px 20px;
+}
+
+td .get_room{
+	padding: 0px;
+}
+
+td, th{
+	border:1px solid #ccc;
+	padding:10px;
+}
+
+#request_form, #request_form_new{
+	text-align:center;
+	font-size: 20px;
+}
+
+tr:nth-child(4n+2), tr:nth-child(4n+3){
+	background: #ddd;
+}
+
+#request_form input, #request_form select, #request_form_new input, #request_form_new select{
+	font-size:inherit;
+	width:100%;
+}
+
+#request_form #change_request, #request_form_new #create_new_request{
+	width:50%;
+}
+
+#request_form select, #request_form_new select{
+	padding:4px 0px;
+}
+
+.user_menu{
+    list-style-type:none;
+}
+
+.header{
+	height: 36px;
+	padding:10px;
+	text-align: center;
+	overflow:hidden;
+	background: #c0a172;
+	font-size: 18px;
+}
+
+#popup_change_request, #popup_bill, #popup_room, #popup_create_request, #popup_get_room{
+	display:none;
+	border-radius:10px;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	padding:30px;
+	border:1px solid black;
+	width: 640px;
+	background: #cee;
+	position:fixed;
+	left:50%;
+	top:50%;
+	opacity: 1;
+	margin-top: -150px;
+	margin-left: -350px;
+	z-index: 5;
+}
+
+table{
+	width: 100%;
+}
+
+#footer {
+	background: #c0a172;
+	min-height: 100px;
+}
+
+.warning, .warn{
+	height: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	color: red;
+}
+
+.warning {
+	width: 250px;
+}
+
+.warning span, .warn span{
+	display:none;
+}
+
+#overlay{
+	z-index:3;
+	position:fixed;
+	background-color:#000;
+	opacity:0.8;
+	width:100%; 
+	height:100%;
+	top:0;
+	left:0;
+	display:none;
+}
+
+.modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	display: block;
+}
+
+#contacts{
+	text-align: center;
+	font-size: 14px;
+	font-weight:bold;
+	margin:auto;
+}
+
+#contacts p{
+	padding: 30px;
+	display:inline-block;
+}

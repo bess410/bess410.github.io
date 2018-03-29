@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link href="css/style.css" rel="stylesheet" />
+		<title>Регистрация нового пользователя</title>
+		<link rel="shortcut icon" href="css/img/hotel.ico" type="image/x-icon" />
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+		<script src="js/registration.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+			</div>
+			<div id="content">
+				<form id="registration" action="" method="post">
+					<div class="left">
+						<div>
+							<label for="name">Имя:</label><br/>
+							<input id="name" name="name" type="text"/>
+							<p class="warning name"><span>Поле Имя не должно быть пустым</span></p>
+						</div>
+						<div class="top">
+							<label for="surname">Фамилия:</label><br/>
+							<input id="surname" name="surname" type="text" />
+							<p class="warning surname"><span>Поле Фамилия не должно быть пустым</span></p>
+						</div>
+					</div>
+					<div class="right">
+						<div>
+							<label for="login">Логин:</label><br/>
+							<input id="login" name="login" type="text"/>
+							<p class="warning login"><span>Поле Логин не должно быть пустым</span></p>
+						</div>
+						<div class="top">
+							<label for="pass">Пароль:</label><br/>
+							<input id="pass" name="pass" type="password"/>
+							<p class="warning pass"><span>Поле Пароль не должно быть пустым</span></p>
+						</div>
+					</div>
+					<input id="btn_reg" type="submit" name="submit" value="Регистрация"/>
+				</form>
+			</div>
+			<div id="footer">
+				<div id="contacts">
+					<p>Адрес:
+					г. Ижевск ул. Ленина д.1 офис 35</p>
+					<p>Телефон:
+					+7(3412)76-33-59</p>
+					<p>Skype:
+					hotroomsizhevsk</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

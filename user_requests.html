@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link href="css/style.css" rel="stylesheet" />
+		<title>Мои заявки</title>
+		<link rel="shortcut icon" href="css/img/hotel.ico" type="image/x-icon" />
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+		<script src="js/user_requests.js"></script>
+		<script src="js/menu.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+			</div>
+			<div id="content">
+				<div id="left_panel">
+					<div class="header">
+						Здравствуйте, Андрей
+					</div>
+					<ul class="user_menu">
+						<li><a href="user_requests.html">Мои заявки</a></li>
+						<li><a href="user_settings.html">Настройки</a></li>
+						<li><a href="index.html">Выход</a></li>
+					</ul>
+				</div>
+				<div id="right_panel">
+					<a id="create_request" href="">Создать новую заявку</a>
+					<table id="requests">
+						<tr>
+							<th>Номер заявки</th>
+							<th>Количество проживающих</th>
+							<th>Класс</th>
+							<th>Начало проживания</th>
+							<th>Окончание проживания</th>
+							<th>Счет</th>
+							<th>Номер</th>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>2</td>
+							<td>Люкс</td>
+							<td>22.03.2018</td>
+							<td>27.03.2018</td>
+							<td><a class="popup_bill" href="">Просмотр</a></td>
+							<td><a class="popup_room" href="">Просмотр</a></td>
+						</tr>
+						<tr>
+							<td colspan="7">
+								<a class="change_request" href="">Изменить</a>
+								<a class="delete" href="">Удалить</a>
+							</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>3</td>
+							<td>Бизнес</td>
+							<td>22.03.2018</td>
+							<td>27.03.2018</td>
+							<td><a class="popup_bill" href="">Просмотр</a></td>
+							<td><a class="popup_room" href="">Просмотр</a></td>
+						</tr>
+						<tr>
+							<td colspan="7">
+								<a class="change_request" href="">Изменить</a>
+								<a class="delete" href="">Удалить</a>
+							</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>2</td>
+							<td>Люкс</td>
+							<td>22.03.2018</td>
+							<td>27.03.2018</td>
+							<td><a class="popup_bill" href="">Просмотр</a></td>
+							<td><a class="popup_room" href="">Просмотр</a></td>
+						</tr>
+						<tr>
+							<td colspan="7">
+								<a class="change_request" href="">Изменить</a>
+								<a class="delete" href="">Удалить</a>
+							</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>3</td>
+							<td>Бизнес</td>
+							<td>22.03.2018</td>
+							<td>27.03.2018</td>
+							<td><a class="popup_bill" href="">Просмотр</a></td>
+							<td><a class="popup_room" href="">Просмотр</a></td>
+						</tr>
+						<tr>
+							<td colspan="7">
+								<a class="change_request" href="">Изменить</a>
+								<a class="delete" href="">Удалить</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="footer">
+				<div id="contacts">
+					<p>Адрес:
+					г. Ижевск ул. Ленина д.1 офис 35</p>
+					<p>Телефон:
+					+7(3412)76-33-59</p>
+					<p>Skype:
+					hotroomsizhevsk</p>
+				</div>
+			</div>
+		</div>
+		<div id="popup_change_request">
+			<span class="modal_close">X</span>
+			<form id="request_form" action="" method="post">
+				<div class="left">
+					<div>
+						<label for="seatNumber">Количество проживающих:</label><br/>
+						<select id="seatNumber" name="seatNumber">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</div>
+					<div class="top">
+						<label for="apartmentClass">Класс номера:</label><br/>
+						<select id="apartmentClass" name="apartmentClass">
+							<option value="economic">Эконом</option>
+							<option value="business">Бизнес</option>
+							<option value="lux">Люкс</option>
+						</select>
+					</div>
+				</div>
+				<div class="right">
+					<div>
+						<label for="start">Начало проживания:</label><br/>
+						<input id="start" name="start" type="date"/>
+					</div>
+					<div class="top">
+						<label for="end">Окончание проживания:</label><br/>
+						<input id="end" name="end" type="date"/>
+					</div>
+				</div>
+				<input id="change_request" type="submit" name="submit" value="Изменить заявку"/>
+			</form>
+		</div>
+		<div id="popup_bill">
+			<span class="modal_close">X</span>
+			<table>
+				<tr>
+					<th>Номер счета</th>
+					<th>Номер заявки</th>
+					<th>Сумма к оплате</th>
+					<th>Статус</th>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>2</td>
+					<td>4500</td>
+					<td>Не оплачено</td>
+				</tr>
+				<tr>
+					<td colspan="5">
+						<a id="pay_bill" href="">Оплатить</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="popup_room">
+			<span class="modal_close">X</span>
+			<table>
+				<tr>
+					<th>Номер заявки</th>
+					<th>Адрес гостиницы</th>
+					<th>Количество мест</th>
+					<th>Класс номера</th>
+					<th>Дата заселения в номер</th>
+					<th>Дата выезда из номера</th>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>ул. Ленина, д. 1</td>
+					<td>2</td>
+					<td>Бизнес</td>
+					<td>22.04.2018</td>
+					<td>27.04.2018</td>
+				</tr>
+			</table>
+		</div>
+		<div id="popup_create_request">
+			<span class="modal_close">X</span>
+			<form id="request_form_new" action="" method="post">
+				<div class="left">
+					<div>
+						<label for="seatNumber_new">Количество проживающих:</label><br/>
+						<select id="seatNumber_new" name="seatNumber">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</div>
+					<div class="top">
+						<label for="apartmentClass_new">Класс номера:</label><br/>
+						<select id="apartmentClass_new" name="apartmentClass">
+							<option value="economic">Эконом</option>
+							<option value="business">Бизнес</option>
+							<option value="lux">Люкс</option>
+						</select>
+					</div>
+				</div>
+				<div class="right">
+					<div>
+						<label for="start_new">Начало проживания:</label><br/>
+						<input id="start_new" name="start" type="date"/>
+					</div>
+					<div class="top">
+						<label for="end_new">Окончание проживания:</label><br/>
+						<input id="end_new" name="end" type="date"/>
+					</div>
+				</div>
+				<input id="create_new_request" type="submit" name="submit" value="Создать заявку"/>
+			</form>
+		</div>
+		<div id="overlay"></div>
+	</body>
+</html>
